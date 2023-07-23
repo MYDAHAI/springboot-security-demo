@@ -1,0 +1,23 @@
+server:
+  port: 8068
+spring:
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/security_demo?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+      username: root
+      password: 123456
+
+#  security:
+#    user: #简单配置默认用户, 没配置认证方式时有效
+#      name: admin
+#      password: admin
+#      roles: admin
+
+
+mybatis-plus:
+  #扫描xml文件的路径
+  mapper-locations: classpath*:mapper/*.xml
+  configuration:
+    call-setters-on-nulls: true
+

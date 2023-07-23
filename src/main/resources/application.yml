@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: anyun-system-manage
+  profiles:
+    active: test
+
+server:
+  port: 8068
+  servlet:
+    context-path: /${spring.application.name}
+
